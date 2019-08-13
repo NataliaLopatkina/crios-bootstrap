@@ -1,0 +1,8 @@
+mixin block-text(item)
+    - var title = ""
+    if item.titleColor
+        - title = " title--" + item.titleColor
+
+    div(class="block-text")
+        h3(class="title block-text__title" + title) !{item.title}
+        p(class="text text--darker block-text__description") !{item.text}

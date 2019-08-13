@@ -1,0 +1,26 @@
+@import "../offers-item/offers-item.css";
+
+.offers {
+    text-align: center;
+
+    &__text {
+        line-height: calc(18/18);
+        padding-right: 43px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin-bottom: 98px;
+    }
+
+    &__list {
+        margin-bottom: 90px;
+    }
+
+    .offers__link {
+        padding: 15px 41px;
+        display: inline-block;
+        margin-bottom: 126px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,8 @@
+.menu {
+    padding-top: 56px;
+
+    &__img {
+        width: 18px;
+        height: 16px;
+    }
+}

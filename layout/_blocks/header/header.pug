@@ -1,0 +1,25 @@
+header(class="header container")
+    nav(class="main-nav row")
+        div(class="menu col-xl-4")
+            button(class="button button--circle button-menu button-menu--opened" type="button")
+                span(class="button-menu__container")
+                    span(class="button-menu__icon")
+            nav(class="nav")
+                ul(class="nav__list")
+                    li(class="nav__item")
+                        a(class="nav__link" href="#5") Home
+                    li(class="nav__item")
+                        a(class="nav__link" href="#5") About us
+                    li(class="nav__item")
+                        a(class="nav__link" href="#5") Contacts
+        div(class="logo col-xl-4")
+            div(class="logo__content")
+                a(href="#5" class="logo__title") Crios
+                p(class="text text--size-l text--lighter text--transform logo__subtitle") Free psd template
+        div(class="search col-xl-4")
+            form(class="search__form")
+                input(type="text" class="search__field-search")
+
+            button(class="button button--circle search__button" type="button")
+                svg(class="search__img")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#search")

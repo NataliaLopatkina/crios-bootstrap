@@ -1,0 +1,155 @@
+doctype html
+html(lang="zxx")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Crios
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+        link(rel="stylesheet" href="stylesheets/common.css")
+
+    body
+        include ../../_blocks/header/header.pug
+
+        main(class="main")
+            div(class="banner container-fluid")
+                div(class="banner__content row")
+                    h1(class="title banner__title col-xl-12") Simple PSD template with cool stuff
+                    p(class="text text--size-l banner__text col-xl-12") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    div(class="banner__block-link  col-xl-12")
+                        a(href="#5" class="button button--square banner__link") Explore template
+
+            div(class="offers container")
+                div(class="offers__content")
+                    p(class="text text--size-l offers__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h2(class="title offers__title") Lorem ipsum dolor sit amet
+                    div(class="offers__list row")
+                        include ../../_blocks/offers-item/offers-item.pug
+                        -
+                            var offers = [
+                                {
+                                    img: "offer-1",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-2",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-3",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+
+                                {
+                                    img: "offer-4",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh."
+                                },
+                            ]
+
+                        each item in offers
+                            +offers-item(item)
+
+                    a(href="#5" class="button button--square offers__link") Check our offer
+
+            div(class="photo container-fluid")
+                div(class="photo__content row")
+                    div(class="photo__block-image col-xl-6")
+                        img(class="photo__img" src="images/photo/photo-1.jpg" srcset="images/photo/photo-1@2x.jpg 2x" alt="Photo")
+                    div(class="photo__text-block photo__text-block--first col-xl-6")
+                        include ../../_blocks/block-text/block-text.pug
+                        -
+                            var text = [
+                                {
+                                    title: "Lorem ipsum dolor",
+                                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                                }
+                            ]
+
+                        each item in text
+                            +block-text(item)
+                    
+                    div(class="photo__text-block photo__text-block--second col-xl-6")
+                        include ../../_blocks/block-text/block-text.pug
+                        -
+                            var text = [
+                                {
+                                    title: "Lorem ipsum dolor",
+                                    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                                }
+                            ]
+
+                        each item in text
+                            +block-text(item)
+                    div(class="photo__block-image photo__block-image--second col-xl-6")
+                        img(class="photo__img" src="images/photo/photo-2.jpg" srcset="images/photo/photo-2@2x.jpg 2x" alt="Photo")
+
+            div(class="apps")
+                div(class="apps__content container")
+                    div(class="apps-item apps-item--first row")
+                        div(class="apps-item__image-block")
+                            img(class="apps-item__img" src="images/apps/apps-1.png" srcset="images/apps/apps-1@2x.png 2x" alt="Apps")
+                        div(class="apps-item__text-block")
+                            include ../../_blocks/block-text/block-text.pug
+                            -
+                                var text = [
+                                    {
+                                        titleColor: "blue",
+                                        title: "Lorem ipsum dolor",
+                                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                                    }
+                                ]
+
+                            each item in text
+                                +block-text(item)
+                            
+                    div(class="apps-item apps-item--second row")
+                        div(class="apps-item__text-block")
+                            include ../../_blocks/block-text/block-text.pug
+                            -
+                                var text = [
+                                    {
+                                        titleColor: "blue",
+                                        title: "Lorem ipsum dolor",
+                                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                                    }
+                                ]
+
+                            each item in text
+                                +block-text(item)
+
+                        div(class="apps-item__image-block")
+                            img(class="apps-item__img" src="images/apps/apps-2.png" srcset="images/apps/apps-2@2x.png 2x" alt="Apps")
+
+            div(class="ceo")
+                div(class="container")
+                    div(class="ceo__content row")
+                        div(class="ceo__photo-block  col-xl-6")
+                            img(class="ceo__photo" src="images/photo/ceo.jpg" srcset="images/photo/ceo@2x.jpg 2x" alt="Ceo")
+
+                        div(class="ceo__text-block col-xl-6")
+                            include ../../_blocks/block-text/block-text.pug
+                            -
+                                var text = [
+                                    {
+                                        titleColor: "red",
+                                        title: "Template is awesome",
+                                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper."
+                                    }
+                                ]
+
+                            each item in text
+                                +block-text(item)
+
+                            div(class="ceo__description")
+                                p(class="ceo__name") John Doe
+                                p(class="ceo__profession") CEO at Crios.com
+
+        include ../../_blocks/footer/footer.pug
+
+        script(src="scripts/common.js")

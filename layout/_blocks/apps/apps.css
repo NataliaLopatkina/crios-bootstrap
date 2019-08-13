@@ -1,0 +1,23 @@
+@import "../apps-item/apps-item.css";
+
+.apps {
+    position: relative;
+    padding-top: 161px;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        content: url("../images/background/snowflake.jpg");
+        top: -90px;
+        left: 46px;
+        z-index: -1;
+    }
+
+    &:after {
+        position: absolute;
+        content: url("../images/background/snowflake-2.jpg");
+        bottom: -194px;
+        right: -100px;
+        z-index: -1;
+    }
+}

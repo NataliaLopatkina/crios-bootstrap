@@ -1,0 +1,15 @@
+@import "../../_blocks/normalize/normalize.css";
+@import "../../_blocks/reset/reset.css";
+
+/*! Styles */
+
+@import "../../_blocks/global/global.css";
+@import "../../_blocks/container/container.css";
+@import "../../_blocks/header/header.css";
+@import "../../_blocks/box/box.css";
+@import "../../_blocks/banner/banner.css";
+@import "../../_blocks/photo/photo.css";
+@import "../../_blocks/offers/offers.css";
+@import "../../_blocks/apps/apps.css";
+@import "../../_blocks/ceo/ceo.css";
+@import "../../_blocks/footer/footer.css";

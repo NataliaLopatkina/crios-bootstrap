@@ -1,0 +1,10 @@
+.block-text {
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        line-height: calc(36/16);
+        max-width: 506px;
+    }
+}

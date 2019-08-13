@@ -1,0 +1,25 @@
+.text {
+    font-size: 16px;
+    color: #4b5863;
+    opacity: 0.25;
+
+    &--size-s {
+        font-size: 14px;
+    }
+
+    &--size-l {
+        font-size: 18px;
+    }
+
+    &--transform {
+        text-transform: uppercase;
+    }
+
+    &--lighter {
+        opacity: 0.15;
+    }
+
+    &--darker {
+        opacity: 0.35;
+    }
+}

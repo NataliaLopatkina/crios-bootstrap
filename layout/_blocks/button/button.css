@@ -1,0 +1,34 @@
+.button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(18/14);
+    color: #43a9ff;
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    box-shadow: 0 0 65px #dae5ef;
+    border: none;
+    outline: none;
+    padding: 0;
+
+    &:hover {
+        text-decoration: none;
+        color: #43a9ff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--circle {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+
+    &--square {
+        min-width: 229px;
+        border-radius: 22px;
+        box-shadow: 0 0 35px rgba(218, 229, 239, 0.45);
+    }
+}

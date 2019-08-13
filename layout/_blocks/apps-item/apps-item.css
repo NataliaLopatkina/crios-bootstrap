@@ -1,0 +1,31 @@
+.apps-item {
+    margin-bottom: 119px;
+    padding-left: 147px;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 164px;
+    }
+
+    &--first {
+        .apps-item__image-block {
+            margin-right: 170px;
+        }
+    }
+
+    &--second {
+        .apps-item__text-block {
+            padding-top: 235px;
+            padding-left: 52px;
+            margin-right: 196px;
+        }
+    }
+
+    &__text-block {
+        padding-top: 222px;
+    }
+
+    .block-text__description {
+        padding-left: 4px;
+    }
+}

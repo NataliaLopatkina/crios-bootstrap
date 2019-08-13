@@ -1,0 +1,12 @@
+@import "../menu/menu.css";
+@import "../button-menu/button-menu.css";
+@import "../logo/logo.css";
+@import "../search/search.css";
+@import "../button/button.css";
+@import "../text/text.css";
+@import "../nav/nav.css";
+
+.header {
+    background: #ffffff;
+    margin-bottom: 162px;
+}

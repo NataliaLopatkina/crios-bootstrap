@@ -1,0 +1,6 @@
+mixin offers-item(item)
+    div(class="offers-item col-xl-3")
+        div(class="offers-item__container-img")
+            img(class="offers-item__img" src="images/svg-icons/" + item.img + ".jpg" alt="Offer")
+        p(class="offers-item__title") !{item.title}
+        p(class="text text--size-s text--darker offers-item__text") !{item.text}

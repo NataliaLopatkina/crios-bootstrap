@@ -1,0 +1,31 @@
+.footer {
+    background: url("../images/background/footer.jpg") no-repeat;
+    min-height: 1528px;
+    text-align: center;
+    padding-top: 129px;
+    background-position: center 290px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../images/background/footer@2x.jpg");
+        background-size: 2000px auto;
+    }
+
+    &__text {
+        padding-right: 53px;
+        margin-bottom: 9px;
+    }
+
+    &__title {
+        margin-bottom: 103px;
+    }
+
+    &__link {
+        padding: 14px 41px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .footer {
+        background-size: 100%;
+    }
+}
